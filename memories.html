@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #ff9f43, #1dd1a1, #ff6b6b, #54a0ff);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            text-align: center;
+            color: white;
+            margin: 20px;
+            padding: 0;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .memory {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #feca57;
+            font-size: 2em;
+        }
+        .media {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        img, video {
+            width: 450px;
+            height: 300px;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.4);
+            transition: transform 0.3s ease;
+        }
+        img:hover, video:hover {
+            transform: scale(1.05);
+        }
+        .back-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #54a0ff;
+            color: white;
+            font-size: 1.4em;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-top: 30px;
+        }
+        .back-button:hover {
+            background: #2e86de;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>College Memories</h1>
+        
+        <div class="memory">
+            <h2>Mandargiri Hills</h2>
+            <div class="media">
+                <img src="mandara.jpg"  alt="Mandargiri Hills">
+                <video controls>
+                    <source src="mandaragiri.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="memory">
+            <h2>Pondicherry</h2>
+            <div class="media">
+                <img src="pondicherry.jpg" alt="Pondicherry" alt="Pondicherry">
+                <video controls>
+                    <source src="pondicherry2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="memory">
+            <h2>Tirupati</h2>
+            <div class="media">
+                <img src="tirupathi.jpg" alt="Tirupati">
+                <video controls>
+                    <source src="tirupathi.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="memory">
+            <h2>Thiruvanamalai</h2>
+            <div class="media">
+                <img src="tiru.jpg" alt="Thiruvanamalai">
+                <video controls>
+                    <source src="tiruvanamalai.mp4" type="video/mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="memory">
+            <h2>Skandagiri Hills</h2>
+            <div class="media">
+                <img src="skandagiri.jpg" alt="Skandagiri Hills">
+                <video controls>
+                    <source src="skandagiri2.mp4" type="video/mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+</body>
+</html>
+

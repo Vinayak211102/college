@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #ff9f43, #1dd1a1, #ff6b6b, #54a0ff);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.4s ease;
+            color: black;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: black;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            justify-items: center;
+            padding: 10px;
+        }
+
+        .friend {
+            text-align: center;
+            padding: 15px;
+            background: white;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.4s ease, border 0.4s ease;
+            border: 5px solid rgba(255, 255, 255, 0.5); /* Light white */
+            border-bottom: 5px solid rgba(0, 0, 0, 0.6); /* Mixed black */
+        }
+
+        .friend:nth-child(1) img:hover { border-color: #ff9f43; }
+        .friend:nth-child(2) img:hover { border-color: #1dd1a1; }
+        .friend:nth-child(3) img:hover { border-color: #ff6b6b; }
+        .friend:nth-child(4) img:hover { border-color: #54a0ff; }
+
+        .gallery img:hover {
+            transform: scale(1.1) rotate(3deg);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+            filter: brightness(1.2);
+        }
+
+        .name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: color 0.3s ease, transform 0.4s ease, text-shadow 0.4s ease;
+        }
+
+        .friend:hover .name {
+            color: #ff6b6b;
+            transform: translateY(-5px);
+            text-shadow: 3px 3px 12px rgba(255, 107, 107, 0.9);
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #2c3e50;
+            color: white;
+            font-size: 1.2em;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+        }
+
+        .back-button:hover {
+            background: #34495e;
+            transform: scale(1.1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Friends ♡</h1>
+        <p>Some of the best moments spent with friends!</p>
+        <div class="gallery">
+            <div class="friend">
+                <div class="name">Jyothi</div>
+                <a href="https://www.instagram.com/_jyothi_1919?igsh=a3R2cmNzNnI2ejc4" target="_blank">
+                    <img src="jyothi.jpg" alt="Jyothi">
+                </a>
+            </div>
+            <div class="friend">
+                <div class="name">Akhil</div>
+                <a href="https://www.instagram.com/akhil__reddy.__?igsh=MXhjNG9tYnh5bTA2bw==" target="_blank">
+                    <img src="akhil.jpg" alt="Akhil">
+                </a>
+            </div>
+            <div class="friend">
+                <div class="name">Yashu</div>
+                <a href="https://www.instagram.com/yashu_kethea?igsh=Mnd1bXphMzl3Yzdx" target="_blank">
+                    <img src="yashu.jpg" alt="Yashu">
+                </a>
+            </div>
+            <div class="friend">
+                <div class="name">Priya</div>
+                <a href="https://www.instagram.com/priyanaikm?igsh=em91enZzazExOTVz" target="_blank">
+                    <img src="priya.jpg" alt="Priya">
+                </a>
+            </div>
+            <div class="friend">
+                <div class="name">Raki</div>
+                <a href="https://www.instagram.com/__whoizthis_?igsh=MWtrb290M3ZwNTg3Zg==" target="_blank">
+                    <img src="raki.jpg" alt="Raki">
+                </a>
+            </div>
+            <div class="friend">
+                <div class="name">Balraj</div>
+                <a href="https://www.instagram.com/bala_kuruba?igsh=OXhlNG1vejY4aGI0" target="_blank">
+                    <img src="bala.jpg" alt="Balraj">
+                </a>
+            </div>
+        </div>
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+</body>
+</html>
